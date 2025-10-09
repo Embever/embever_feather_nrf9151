@@ -1,16 +1,15 @@
 /*
  * Copyright (c) 2018-2020 Nordic Semiconductor ASA
  * Copyright (c) 2020-2024 Circuit Dojo LLC
- * Copyright (c) 2025 Embever GmbH
- *
+ * Copyright (c) 2025-2025 Embever GmbH
  * SPDX-License-Identifier: Apache-2.0
  */
 #include "embever_feather_nrf9151_common-pinctrl.dtsi"
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 / {
-	model = "Embever nRF9151 Feather";
-	compatible = "embever,feather-nrf9151";
+	model = "Feather board with nRF9151";
+	compatible = "embever,embever-feather-nrf9151";
 
 	chosen {
 		zephyr,console = &uart0;
@@ -52,6 +51,7 @@
 			automount;
 		};
 	};
+
 };
 
 &adc {
@@ -135,8 +135,6 @@
 				regulator-min-microvolt = <3300000>;
 				regulator-max-microvolt = <3300000>;
 			};
-
-
 		};
 	};
 
@@ -229,4 +227,4 @@
 };
 
 /* Include partition configuration file */
-#include "embever_feather_nrf9151_partition_conf.dtsi"
+#include "embever_feather_nrf9151-partitioning.dtsi"

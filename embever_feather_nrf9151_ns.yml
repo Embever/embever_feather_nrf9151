@@ -1,0 +1,10 @@
+identifier: embever_feather_nrf9151/nrf9151/ns
+name: Feather board with nRF9151
+vendor: Embever
+type: mcu
+arch: arm
+ram: 128
+flash: 212
+toolchain:
+  - zephyr
+supported: []
