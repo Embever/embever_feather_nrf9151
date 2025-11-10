@@ -1,0 +1,15 @@
+&pinctrl {
+
+    i2c2_default: i2c2_default {
+		group1 {
+			bias-pull-up;
+		};
+	};
+
+	i2c2_sleep: i2c2_sleep {
+		group1 {
+			bias-pull-up;
+		};
+	};
+
+}

@@ -4,9 +4,10 @@ board:
   socs:
   - name: nrf9151
     variants:
-    - name: ns
+    - name: 'ns'
   revision:
-    format: number
-    default: "1"
+    format: major.minor.patch
+    default: "2.0.0"
     revisions:
-      - name: "1"
+    - name: "1.1.0"
+    - name: "2.0.0"

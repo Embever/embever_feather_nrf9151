@@ -13,3 +13,5 @@ board_runner_args(probe-rs "--chip=nRF9151_xxAA")
 include(${ZEPHYR_BASE}/boards/common/nrfjprog.board.cmake)
 include(${ZEPHYR_BASE}/boards/common/jlink.board.cmake)
 include(${ZEPHYR_BASE}/boards/common/probe-rs.board.cmake)
+
+board_check_revision(FORMAT MAJOR.MINOR.PATCH)
