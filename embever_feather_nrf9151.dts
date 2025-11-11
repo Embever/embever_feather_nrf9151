@@ -1,6 +1,6 @@
 /dts-v1/;
 #include <nordic/nrf9151_laca.dtsi>
-#include "embever_feather_nrf9151-partitioning.dtsi"
+#include <nordic/nrf91xx_partition.dtsi>
 
 / {
 	chosen {
